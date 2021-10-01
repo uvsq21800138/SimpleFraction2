@@ -1,11 +1,11 @@
 public class Fraction {
-    private int denominateur ;
     private int numerateur ;
+    private int denominateur ;
 
-    public Fraction(int d, int n) {
+    public Fraction(int n, int d) {
         /* cas des divisions par 0 --> NullDivisionException */
-        this.denominateur = d;
         this.numerateur = n;
+        this.denominateur = d;
     }
 
     public int getDen() {
@@ -26,8 +26,6 @@ public class Fraction {
 
     @Override
     public String toString() {
-        return "{" + denominateur +
-                "/" + numerateur +
-                '}';
+        return "{" + numerateur + "/" + denominateur + "}";
     }
 }
