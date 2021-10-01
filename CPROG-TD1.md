@@ -25,9 +25,7 @@ En terme de *commits*, quelle différence constatez-vous entre cocher une (ou pl
     ```
 1. Initialisez le dépôt `git` local pour le projet;
     ```bash
-    git init SimpleFraction 2
-    git remote add origin https://github.com/uvsq21800138/SimpleFraction2.git 
-    git pull
+    git init SimpleFraction2
    # OU #
     git clone https://github.com/uvsq21800138/SimpleFraction2.git 
     ```
