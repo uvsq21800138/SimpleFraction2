@@ -20,8 +20,8 @@ En terme de *commits*, quelle différence constatez-vous entre cocher une (ou pl
     *Pour la suite, ne cochez aucune de ces cases*.
 1. Localement, configurez `git` avec votre nom (`user.name`) et votre email (`user.email`);
     ```bash
-    git config --global user.name "Coralie Zens"
-    git config --global user.email "coralie.zens@gmail.com"
+    git config --global user.name "uvsq21800138"
+    git config --global user.email "coralie.zens@ens.uvsq.fr"
     ```
 1. Initialisez le dépôt `git` local pour le projet;
     ```bash
@@ -42,8 +42,14 @@ Validez les changements;
 1. Ajoutez un constructeur et la méthode `toString` à la classe `Fraction` et modifiez la classe `Main` en conséquence;
 Validez les changements;
     ```Java
-    Fraction f1 = new Fraction(3,4);
-    System.out.println(f1.toString());
+   public class Main {
+       public static void main(String[] argv) {
+           System.out.println("Fraction :");
+           Fraction f1 = new Fraction(3,4);
+           assert f1.toString().equals("{3/4}") : "Erreur dans Fraction.toString";
+           System.out.println(f1.toString());
+       }
+   }
     ```
 1. Publiez vos modifications sur le dépôt distant;
 Vous utiliserez le protocole `https` pour cela;
@@ -54,7 +60,7 @@ Vérifiez avec le navigateur;
     ```
 1. Sur la forge, ajoutez un fichier de documentation `README.md`.
 Quelle syntaxe est utilisée pour ce fichier ?
-    > La syntaxe utilisé dans les fichiers .md est markdown.
+    > La syntaxe utilisée dans les fichiers .md est markdown.
 1. Récupérez localement les modifications effectuées sur la forge.
     ```bash
     git pull https://github.com/uvsq21800138/SimpleFraction2.git master
@@ -100,7 +106,7 @@ Donnez un exemple.
 1. Donnez la ou les commandes shell permettant de
     1. afficher les fichiers d'un répertoire triés par taille (taille affichée lisiblement)
         ```bash
-        # Répondre ici
+        ls 
         ```
     1. compter le nombre de ligne d'un fichier
         ```bash
