@@ -1,0 +1,6 @@
+# Fichier de compilation
+out/
+
+# Fichier de configuration IDEA
+.idea/
+*.iml
