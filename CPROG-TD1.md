@@ -104,37 +104,37 @@ Donnez un exemple.
 1. Donnez la ou les commandes shell permettant de
     1. afficher les fichiers d'un répertoire triés par taille (taille affichée lisiblement)
         ```bash
-        ls 
+        ls -Ssh1
         ```
     1. compter le nombre de ligne d'un fichier
         ```bash
-        # Répondre ici
+        wc -l [fichier]
         ```
     1. afficher les lignes du fichier `Main.java` contenant la chaîne `uneVariable`
         ```bash
-        # Répondre ici
+        grep -F "UneVariable" Main.java
         ```
     1. afficher récursivement les fichiers `.java` contenant la chaîne `uneVariable`
         ```bash
-        # Répondre ici
+        grep "UneVariable" -rl --include="*.java"
         ```
     1. trouver les fichiers (pas les répertoires) nommés `README.md` dans une arborescence de répertoires
         ```bash
-        # Répondre ici
+        find -type f -name README.md
         ```
     1. afficher les différences entre deux fichiers textes
         ```bash
-        # Répondre ici
+        diff fichier1.txt fichier2.txt
         ```
 1. Expliquez en une ou deux phrases le rôle de ces commandes et dans quel contexte elles peuvent être utiles pour un développeur.
     * `ssh`
-        > Répondre ici
+        > Permet de se connecter à une machine distante pour sécuriser et authentifier la connexion selon une procédure ssh.
     * `screen`/`tmux`
-        > Répondre ici
+        > Permet d'ouvrir plusieurs terminals simultanément dans une seule fenêtre.
     * `curl`/[HTTPie](https://httpie.org/)
-        > Répondre ici
+        > Permet de faire des requêtes sur un serveur selon divers protocoles de transfert d'information (http/https, ftp...).
     * [jq](https://stedolan.github.io/jq/)
-        > Répondre ici
+        > Cette commande permet de modifier (découper, filtrer, mapper, transformer) des données de fichier .json tout comme sed et grep le font sur des textes.
 
 ### Découverte de votre *IDE*
 Dans cet exercice, vous expliquerez en quelques phrases comment vous réalisez les actions ci-dessous dans votre IDE.
@@ -142,28 +142,28 @@ Vous pouvez choisir l'IDE/éditeur de texte de votre choix.
 Pour réaliser cette exercice, vous devez bien évidemment vous reporter à la documentations de l'IDE ([IntelliJ IDEA](https://www.jetbrains.com/help/idea/discover-intellij-idea.html#developer-tools), [Visual Studio Code](https://code.visualstudio.com/docs), [Eclipse](https://help.eclipse.org/2020-09/index.jsp), …).
 
 1. Quels IDE ou éditeurs de texte utilisez-vous pour le développement Java ?
-    > Répondre ici
+    > J'utilise IntelliJ IDEA.
 
     Pour la suite, ne considérez que l'un de vos choix.
 1. Comment vérifier/définir que l'encodage utilisé est *UTF-8* ?
-    > Répondre ici
+    > Le paramètre est affiché en bas à droite de la fenêtre et se trouve dans File>Settings>Editor>File Encoding.
 1. Comment choisir le JDK à utiliser dans un projet ?
-    > Répondre ici
+    > Dans l'onglet File>Project Structure>Project, il est possible de configurer la JDK utilisée dans *Project SDK*.
 1. Comment préciser la version Java des sources dans un projet ?
-    > Répondre ici
+    > Dans l'onglet File>Project Structure>Project, il est possible de configurer le langage Java des modules dans *Project language level*.
 1. Comment ajouter une bibliothèque externe dans un projet ?
-    > Répondre ici
+    > Depuis File>Project Settings>Libraries, il est possible d'ajouter, modifier et supprimer des librairies externes.
 1. Comment reformater un fichier source Java ?
-    > Répondre ici
+    > Depuis Code>Reformate Code, il est possible de réarranger le code ou d'optimiser les imports du fichier source.
 1. Comment trouver la déclaration d'une variable ou méthode ?
-    > Répondre ici
+    > Par un clic-droit sur l'appel de cette variable ou méthode, l'option Go to...>Declaration est proposée ou alors le raccourci clavier ` Ctrl+B ` .
 1. Comment insérer un bloc de code prédéfini (*snippet*) ?
-    > Répondre ici
+    > Par un clic-droit dans la fenêtre de la classe java ou par l'onglet Code, on accède à l'option *Generate* qui propose différents blocs de code prédéfinit pour la classe courante.
 1. Comment renommer une classe dans l'ensemble du projet ?
-    > Répondre ici
+    > Par l'onglet Refactor>Rename..., ou par le raccourci clavier `Maj+F6` sur le nom de la classe, le changement se répendra dans tout le projet à toutes les récurrences du nom changé.
 1. Comment exécuter le programme en lui passant un paramètre en ligne de commande ?
-    > Répondre ici
+    > Dans l'onglet Run>Edit Configurations..., on accède à une fenêtre de paramètrage. La ligne *Programm arguments* permet de rentrer des paramètres qui seront utilisé en argument de la méthode main spécifié dans cette fenêtre. 
 1. Comment déboguer le programme en visualisant le contenu d'une ou plusieurs variables ?
-    > Répondre ici
+    > En utilisant l'onglet *Run>Debug...*, on lance la méthode main sélectionnée en marquant des arrêts sur les breackpoints notifiés par des ronds sur la marge gauche du code. On ajoute les breakpoints par un clic-gauche dans la marge et on les paramètres par un clic-droit sur le rond rouge apparu. La console du debogueur affiche les valeurs des variables, qui sont aussi en italique sur le code.
 1. Quels paramètres ou fonctionnalités vous semblent particulièrement importants/utiles pour le développement Java ?
-    > Répondre ici
+    > Il me semble que l'auto-complétion de code par l'ajout des imports et la gestion des packages est très pratique pour le développement en Java en plus des fonctionnalités cités plutôt.
